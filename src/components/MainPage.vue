@@ -14,44 +14,30 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import Vuex from 'vuex';
 
-Vue.use(Vuex);
-
-export default new Vuex.Store
-(
-  {
-    state:
-    {
-      titles: [{title: "Hello", content: "Description, de l'article"}]
-    },
-    mutations:{},
-    actions:{},
-  }
-)
-
-// export default {
-//   name: 'MainPage',
-//   props: {
-//     msg: String
-//   },
+export default {
+  name: 'MainPage',
+  props: {
+    msg: String
+  },
   
-//  methods:{
-//     removeBlog: function(titles){
-//       let currentID = this.titles.indexOf(titles);
-//       var debugID = currentID +1;
-//       this.titles.splice(currentID, 1);
-//       console.log('Ligne numéro '+debugID+' a été supprimée.');
-//       console.log(debugID);
-//     }   
-//   },
-//     data() {
-//     return {
-      // titles: [{title: "Hello", content: "Description, de l'article"}]
-//     };
-//   },
-// }
+ methods:{
+    removeBlog: function(titles){
+      let currentID = this.titles.indexOf(titles);
+      var debugID = currentID +1;
+      this.titles.splice(currentID, 1);
+      console.log('Ligne numéro '+debugID+' a été supprimée.');
+      console.log(debugID);
+    }   
+  },
+    data() {
+    return {
+      titles: [
+        {title: "Hello", content: "Description, de l'article"},
+      ]
+    };
+  },
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
