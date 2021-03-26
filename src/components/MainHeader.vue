@@ -23,29 +23,27 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
 .container
 {
-  background: blue;
+  background: grey;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-}
-
-.container div
-{
-  display: flex;
-}
-
-.container div:first-child
-{
-  justify-content: space-around;
-  width: 10%;
-}
-.container div:last-child
-{
-  justify-content: space-around;
-  width: 75%;
+  div
+    {
+      display: flex;
+    }
+  div:first-child
+    {
+      justify-content: space-around;
+      width: 10%;
+    }
+  div:last-child
+    {
+      justify-content: space-around;
+      width: 75%;
+    }
 }
 </style>

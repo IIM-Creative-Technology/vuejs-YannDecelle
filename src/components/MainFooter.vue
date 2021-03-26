@@ -19,7 +19,7 @@ export default {
 <style scoped>
 .container
 {
-    background: red;
+    background: grey;
     display: flex;
     justify-content: space-around;
 }
